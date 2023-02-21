@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face {
+    font-family: "";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway','Times New Roman', Times, serif;
+    color: #777;
+    box-sizing: border-box;
+
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+
+}
+
+.section-header {
+    margin-top: 45px;
+    font-family:serif ;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+    padding: 20px;
+    border: 1px solid darkblue; 
+    background-color: darkgray;
+    border-radius: 30px;
+
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: black;
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #2D9CDB;
+    font-size: 4em;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+
+
+.shop-item {
+    margin: 30px;    
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 250px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: white;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: white;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: white;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: white;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: white;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: white ;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+
+
+.wrapper{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+.wrapper .buttons{
+    width: 100%;
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 20px;
+
+}
+
+.wrapper .buttons .btn{
+    padding: 0 10px;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    margin-left:10px ;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+}
+
+.wrapper .buttons .btn.active{
+    background-color:darkgray;
+}
+
+.wrapper .buttons .btn:nth-child(1){
+    font-size: 0.7em;
+}
+
+.wrapper .buttons .btn:nth-child(2){
+    font-size: 1em;
+}
+
+.wrapper .buttons .btn:nth-child(3){
+    font-size: 1.3em;
+}
+
+.wrapper .content{
+    font-size: 1em;
+    color:black;
+    line-height: 30px;
+    transition: 0.1s;
+    text-align: justify;
+    
+    
+}
+.wrapper.contenth2,
+.wrapper.content {
+    transition: 0.5s;
+    margin-bottom: 25px;
+}
+
+.form-container{
+    background-color: rgb(216,214,214);
+    box-shadow: rgb(0,0,0) 0px 5px 15px;
+    width: 700px;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto 80px auto;
+    
+}
+
+.form-header{
+    color: #fff;
+    text-align: center;
+    background-color: black;
+    padding: 20px 40px;
+    border-bottom: 2px solid #494848;
+    width: 100%;
+
+    
+
+}
+
+.form{
+    padding: 30px 40px;
+
+    
+}
+
+.form-group{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input{
+    border: 2px solid #f0f0f0;
+    display: block;
+    border-radius: 4px;
+    font-size: .8rem;
+    width: 100%;
+    padding: 10px;
+}
+
+.form input::placeholder{
+    color: #2a0845;
+}
+
+.form-group i{
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    visibility: hidden;
+}
+
+.form-group span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: bolder;
+    font-size: 1rem;
+    font-style: italic;
+    visibility: hidden;
+}
+
+
+.form-group.success input{
+    border-color: #2ecc71;
+}
+
+.form-group.error input{
+    border-color: #e74c3c;
+}
+
+.form-group.error span{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-group.success i.ion-ios-checkmark{
+    visibility: visible;
+    color: #2ecc71;
+}
+
+.form-group.error i.ion-android-alert{
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.form #submit{
+    background-color: black;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 60%;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .5s;
+    border-radius: 10px;
+    margin-left: 120px;
+    margin-top: 30px;
+    
+}
+.form #submit:hover{
+    background-color: blue;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}
+.form #cart{
+    background-color: red;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 10%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 90px;
+    cursor: pointer;
+    
+
+}
+
+.form #cart:hover{
+    background-color: #ff0000;
+    box-shadow: 0 0 10px #ff0000, 0 0 40px #ff0000, 0 0 80px #ff0000;
+   
+}
+
+@media only screen and (max-width : 500px){
+    .form{
+        width: 100%;
+    }
+    .form-group span{
+        font-size: xx-small;
+    }
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(255, 0, 68);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 40px;
+  
+}
+
+#myBtn:hover {
+    background-color: #ff0044;
+    box-shadow: 0 0 10px #ff0044, 0 0 40px #ff0044, 0 0 20px #ff0044;
+    
+}
+
+.navbar{
+    z-index: 999;
+}
