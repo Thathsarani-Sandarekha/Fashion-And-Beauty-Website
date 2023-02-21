@@ -1,0 +1,284 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #312e2d;
+}
+
+.gallery {
+    padding: 10px;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #312e2d;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense;
+}
+
+.h-span {
+    grid-row: span 2;
+}
+
+.v-span {
+    grid-column: span 2;
+}
+
+.gallery div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery img:hover {
+    cursor: pointer;
+    fill: brightness(70%);
+}
+
+#FullImgWindow {
+    padding-top: 50px;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    z-index: 100;
+}
+
+#FullImg {
+    padding: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    max-height: 80vh;
+    max-width: 80vw;
+}
+
+#CloseBtn {
+    padding-top: 70px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 2rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#description {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 150px;
+    padding-left: 20px;
+    padding-right: 50px;
+    color: #f2f2f2;
+    font-size: 20px;
+
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Bellota', cursive;;
+    font-size: 25px;
+    color: #ffa8b5;
+    padding-top: 70px;
+}
+
+p {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #b86fb7;
+    padding-top: 20px;
+}
+
+:root{
+    --background: rgba(14, 16, 16, 0.85); /*Using a variable will make it convienient to change nav color later*/
+  }
+  *, *::before, *::after{
+   box-sizing: border-box;
+  }
+
+
+/* Navigation Styles */
+header{
+    background: var(--background);
+    text-align: center;
+    position: fixed;
+    z-index:999; /*To keep the nav all the way top*/
+    width: 100%;
+   }
+   .nav-toggle{
+    display: none;
+   }
+   .nav-toggle-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+   }
+   .nav-toggle-label span,
+   .nav-toggle-label span::before,
+   .nav-toggle-label span::after{
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+   }
+   .nav-toggle-label span::before,
+   .nav-toggle-label span::after{
+    content: '';
+    position: absolute;
+   }
+   .nav-toggle-label span::before{
+       content: '';
+    bottom: 7px;
+   }
+   .nav-toggle-label span::after{
+    top: 7px;
+   }
+   .nav{
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--background);
+    width: 100%;
+    transform:scale(1,0);
+       transform-origin: top;
+       transition: transform 200ms ease-in-out;
+   }
+   
+   nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+   }
+   nav li{
+    margin-bottom: 1em;
+    margin-left: 1em;
+    
+   }
+   nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+       opacity: 0;
+       transition: opacity 250ms ease-in-out;
+   }
+   nav a:hover{
+    color: #000;
+   }
+   .nav-toggle::checked ~ nav { /*Looks for nav sibbling to .nav-toggle*/
+       transform: scale(1,1);
+   }
+   .nav-toggle:checked ~ nav a{
+       opacity: 1;
+       transition: opacity 150ms ease-in-out 150ms;
+   }
+   @media screen and (min-width: 800px){
+       .nav-toggle-label{
+           display: none;
+       }
+       header{
+           display: grid;
+           grid-template-columns: 1fr auto minmax(600px, 3fr) ;
+       }
+       .logo{
+           grid-column: 2 span 3;
+       }
+       nav{
+        all: onset;  /*Removes previous styles done on nav - cus hamburger menu popping up */
+           grid-column: 3/4;
+           display: flex;
+                   justify-content:flex-end;
+           align-items: center;
+   
+           
+       }
+       nav ul{
+           display: flex;
+   /* 		justify-content:flex-end; */
+           
+       }
+       nav li{
+           margin-left: 3em;
+           margin-bottom: 0;
+       }
+       nav a{
+           opacity: 1;
+       }
+   }
+ 
+    /*------------------- footer ----------------------*/
+
+
+footer {
+    background: #5e5a5b;
+    display: block;
+    position: absolute;
+    width: 100%;;
+    left:0;
+    /* bottom: 0%; */
+    top: 300%;
+    text-align: center;
+    margin-left: auto;
+	margin-right:auto;
+	margin-top:150px;
+    opacity: 0.5;
+  }
+
+  footer:hover{
+    opacity: 0.9;
+}
+
+footer p {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #b86fb7;
+    padding-top: 20px;
+}
+  
+.social 
+{ 
+    display:table; 
+    margin:15px auto 0 auto; 
+    list-style-type:none; 
+}
+
+.social li 
+{ 
+    padding-left:20px; 
+    padding-top:10px; 
+    float:left; 
+}
+
+.social li a { 
+    text-decoration: none;
+   color: #8f6c84;
+   font-size: 30px;
+   margin: 10px;
+   transition: color 0.4s;
+}
+
+.social li a:hover {
+    color: #ffa8b5;
+}
+.social li i 
+{  
+    width:20px; 
+    height:20px; 
+    text-align:center;
+}

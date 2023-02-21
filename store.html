@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Beauty | Store</title><!--Title for the web page-->
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="CSS/styles.css" /><!--Link to the external style sheet-->
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="CSS/navigation.css">
+        <link rel="stylesheet" href="cw.css">
+        <script defer src="store.js"></script><!--Link to the External Script-->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        
+    </head>
+
+    <body>
+        
+        <div class="header_mainpage">
+            <div class="navbar">
+                <div class="logo"><img src="images/logo1.jpeg" width="50px"></div>
+                <div class="navbar-right">
+                    <ul>
+                        <li> <a href=#>Home</a></li>
+                        <li> <a href="SignupForm.html">Sign Up</a></li>
+                        <li> <a href="store.html">Buy Products</a></li>
+                        <li> <a href=#>Query Form</a></li>
+                        <li> <a href="AboutUs.html">About Us</a></li>
+                        <li> <a href=#>Quiz</a></li>
+                        <li> <a href="ListingPage.html">Listing Page</a></li>
+                        <li> <a href="Gallerynew.html">Gallery</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        
+      <!--Font size increase / decrease-->
+        <div class="wrapper">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="buttons">
+                <span class="btn" onclick="document.getElementById('txt').style.fontSize= '0.5em'">-</span><!--Decrese font size-->
+                <span class="btn active" onclick="document.getElementById('txt').style.fontSize= '1.0em'">A</span><!--Normal font size-->
+                <span class="btn" onclick="document.getElementById('txt').style.fontSize= '1.75em'">+</span><!--Increse font size-->
+            </div>
+
+
+            <div class="content" id="txt">
+
+                <!-- Product listing -->
+
+
+    
+                <section class="container content-section">  <!--section for the Lipstics -->
+                    <h2 class="section-header">LIPSTICS</h2>  <!--Poduct main category -->
+                    <div class="shop-items">  <!--all shop products are include in this class call shop-items-->
+                        <div class="shop-item">
+                            <span class="shop-item-title">Sunnies</span>  <!-- Product title -->
+                            <img class="shop-item-image" src="Images/l1.jpg" alt="men shirt">  <!-- product Image -->
+                            <div class="shop-item-details">  <!--class for declare product's price and the add to card button-->
+                                <span class="shop-item-price">$10.99</span>  <!--price details and use span tag for inline container of a text -->
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>  <!-- for add to cart button-->
+                            </div><!--End of the item details -->
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Nude brown</span><!-- Product title -->
+                            <img class="shop-item-image" src="Images/l2.jpg"><!-- product Image -->
+                            <div class="shop-item-details"> <!--class for declare product's price and the add to card button-->
+                                <span class="shop-item-price">$9.99</span> <!--price details and use span tag for inline container of a text -->
+                                <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button> <!-- for add to cart button-->
+                            </div><!--End of the item details -->
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Matte</span><!-- Product title -->
+                            <img class="shop-item-image" src="Images/l3.jpg"><!-- product Image -->
+                            <div class="shop-item-details"><!--class for declare product's price and the add to card button-->
+                                <span class="shop-item-price">$14.99</span><!--price details and use span tag for inline container of a text -->
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button><!-- for add to cart button-->
+                            </div><!--End of the item details -->
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Nude red</span><!-- Product title -->
+                            <img class="shop-item-image" src="Images/l4.jpg"><!-- product Image -->
+                            <div class="shop-item-details"><!--class for declare product's price and the add to card button-->
+                                <span class="shop-item-price">$11.99</span><!--price details and use span tag for inline container of a text -->
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button><!-- for add to cart button-->
+                            </div><!--End of the item details -->
+                        </div>
+                        
+                    </div><!-- End of the shop items class -->
+                </section><!-- End of the Lipstics section -->
+
+
+
+                        
+                   
+
+<!----------------------------------------------------------------Health Skints----------------------------------------------------------------------------------->
+
+
+
+                <section class="container content-section">  <!--section for the Health Skints -->
+                    <h2 class="section-header">HEALTH SkINTS</h2>  <!--Poduct main category -->
+                    <div class="shop-items">  <!--all shop products are include in this class call shop-items-->
+                        <div class="shop-item">
+                            <span class="shop-item-title">Strum</span>  <!-- Product title -->
+                            <img class="shop-item-image" src="Images/24.jpeg" alt="Cosmatics">  <!-- product Image -->
+                            <div class="shop-item-details">  <!--class for declare product's price and the add to card button-->
+                                <span class="shop-item-price">$20.99</span>  <!--price details and use span tag for inline container of a text -->
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>  <!-- for add to cart button-->
+                            </div><!--End of the item details -->
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Face Cleaner</span><!-- Product title -->
+                            <img class="shop-item-image" src="Images/25.jpeg"><!-- product Image -->
+                            <div class="shop-item-details"> <!--class for declare product's price and the add to card button-->
+                                <span class="shop-item-price">$18.99</span> <!--price details and use span tag for inline container of a text -->
+                                <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button> <!-- for add to cart button-->
+                            </div><!--End of the item details -->
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Olay</span><!-- Product title -->
+                            <img class="shop-item-image" src="Images/26.jpeg"><!-- product Image -->
+                            <div class="shop-item-details"><!--class for declare product's price and the add to card button-->
+                                <span class="shop-item-price">$23.99</span><!--price details and use span tag for inline container of a text -->
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button><!-- for add to cart button-->
+                            </div><!--End of the item details -->
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Foundation</span><!-- Product title -->
+                            <img class="shop-item-image" src="Images/27.jpeg"><!-- product Image -->
+                            <div class="shop-item-details"><!--class for declare product's price and the add to card button-->
+                                <span class="shop-item-price">$15.99</span><!--price details and use span tag for inline container of a text -->
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button><!-- for add to cart button-->
+                            </div><!--End of the item details -->
+                        </div>
+                        
+                    </div><!-- End of the shop items class -->
+                </section><!-- End of the Health Skints section -->
+
+
+
+                        
+                    
+
+
+
+<!----------------------------------------------------------------BLUSHES----------------------------------------------------------------------------------->
+
+
+
+                <section class="container content-section">  <!--section for the blushes -->
+                    <h2 class="section-header">BLUSHES</h2>  <!--Poduct main category -->
+                    <div class="shop-items">  <!--all shop products are include in this class call shop-items-->
+                        <div class="shop-item">
+                            <span class="shop-item-title">Milani</span>  <!-- Product title -->
+                            <img class="shop-item-image" src="Images/31.jpeg" alt="men shirt">  <!-- product Image -->
+                            <div class="shop-item-details">  <!--class for declare product's price and the add to card button-->
+                                <span class="shop-item-price">$111.99</span>  <!--price details and use span tag for inline container of a text -->
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>  <!-- for add to cart button-->
+                            </div><!--End of the item details -->
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Mac blush</span><!-- Product title -->
+                            <img class="shop-item-image" src="Images/32.jpeg"><!-- product Image -->
+                            <div class="shop-item-details"> <!--class for declare product's price and the add to card button-->
+                                <span class="shop-item-price">$20.99</span> <!--price details and use span tag for inline container of a text -->
+                                <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button> <!-- for add to cart button-->
+                            </div><!--End of the item details -->
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Grazia india</span><!-- Product title -->
+                            <img class="shop-item-image" src="Images/33.jpeg"><!-- product Image -->
+                            <div class="shop-item-details"><!--class for declare product's price and the add to card button-->
+                                <span class="shop-item-price">$12.99</span><!--price details and use span tag for inline container of a text -->
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button><!-- for add to cart button-->
+                            </div><!--End of the item details -->
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Pop Sugar</span><!-- Product title -->
+                            <img class="shop-item-image" src="Images/34.jpeg"><!-- product Image -->
+                            <div class="shop-item-details"><!--class for declare product's price and the add to card button-->
+                                <span class="shop-item-price">$17.99</span><!--price details and use span tag for inline container of a text -->
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button><!-- for add to cart button-->
+                            </div><!--End of the item details -->
+                        </div>
+                        
+                    </div><!-- End of the shop items class -->
+                </section><!-- End of the blushes section -->
+
+
+
+                        
+                   
+
+
+<!----------------------------------------------------------------EYEBROW PENCILS----------------------------------------------------------------------------------->
+
+
+
+
+                <section class="container content-section">  <!--section for the eyebrows -->
+                    <h2 class="section-header">EYEBROW PENCILS</h2>  <!--Poduct main category -->
+                    <div class="shop-items">  <!--all shop products are include in this class call shop-items-->
+                        <div class="shop-item">
+                            <span class="shop-item-title">Rimmel London</span>  <!-- Product title -->
+                            <img class="shop-item-image" src="Images/35.jpeg" alt="men shirt">  <!-- product Image -->
+                            <div class="shop-item-details">  <!--class for declare product's price and the add to card button-->
+                                <span class="shop-item-price">$12.99</span>  <!--price details and use span tag for inline container of a text -->
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>  <!-- for add to cart button-->
+                            </div><!--End of the item details -->
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Make-Up Studio</span><!-- Product title -->
+                            <img class="shop-item-image" src="Images/36.jpeg"><!-- product Image -->
+                            <div class="shop-item-details"> <!--class for declare product's price and the add to card button-->
+                                <span class="shop-item-price">$14.99</span> <!--price details and use span tag for inline container of a text -->
+                                <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button> <!-- for add to cart button-->
+                            </div><!--End of the item details -->
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Florence</span><!-- Product title -->
+                            <img class="shop-item-image" src="Images/37.jpeg"><!-- product Image -->
+                            <div class="shop-item-details"><!--class for declare product's price and the add to card button-->
+                                <span class="shop-item-price">$9.99</span><!--price details and use span tag for inline container of a text -->
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button><!-- for add to cart button-->
+                            </div><!--End of the item details -->
+                        </div>
+                        <div class="shop-item">
+                            <span class="shop-item-title">Anestasia Bevery Skills</span><!-- Product title -->
+                            <img class="shop-item-image" src="Images/38.jpeg"><!-- product Image -->
+                            <div class="shop-item-details"><!--class for declare product's price and the add to card button-->
+                                <span class="shop-item-price">$15.99</span><!--price details and use span tag for inline container of a text -->
+                                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button><!-- for add to cart button-->
+                            </div><!--End of the item details -->
+                        </div>
+                        
+                    </div><!-- End of the shop items class -->
+                </section><!-- End of the eyebrows section -->
+
+
+
+                        
+                   
+
+
+
+
+<!---------------------------------------------------------------CART------------------------------------------------------------------------------------>
+
+
+
+        <section class="container content-section"><!-- create a section for the page cart section -->
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2 class="section-header">CART</h2><!-- Cart Heading -->
+            <div class="cart-row">
+
+                <button onclick="topFunction()" id="myBtn" title="Go to cart">Cart</button> <!-- button for go to the cart section-->
+
+                <span class="cart-item cart-header cart-column">ITEM</span> <!-- Items listing column -->
+                <span class="cart-price cart-header cart-column">PRICE</span> <!-- price listing column -->
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span> <!-- Items quantity listing Column -->
+            </div>
+            <div class="cart-items"><!-- Create a class for the cart items -->
+            </div>
+            <div class="cart-total"><!-- Create a class for the cart total -->
+                <strong class="cart-total-title">Total</strong><!-- Total for the class. using strong tag for indicates that its contents have strong importance --> 
+                <span class="cart-total-price">$0</span><!-- show starting total is $0 -->
+            </div><!-- End of the cart-total-->
+        </section> <!-- End of the cart section -->
+
+
+            <!--------------form------------------>
+
+
+                <div class="form-container"><!-- create a class for the validation form -->
+                    <div class="form-header"><!-- This is validation form header class -->
+                        <h2>Customer Details</h2><!-- Form Heading -->
+                    </div>
+                    <form action="" class="form"><!-- use form tag for create a form --> 
+                        <div class="form-group"><!-- Class of the form-Username -->
+                            <label for="">UserName : </label><!-- User name lable of the form -->
+                            <input type="text" placeholder="username" id = "username" autocomplete="off"><!-- Input user name -->
+                            <i class="ion-ios-checkmark"></i><!-- checkmark icon -->
+                            <i class="ion-android-alert"></i><!-- Alert icon -->
+                             <span></span>
+                        </div>
+                        <div class="form-group"><!-- Class of the form-Email -->
+                            <label for="">Email : </label><!-- User Email_id lable of the form -->
+                            <input type="text" placeholder="email" id = "email" autocomplete="off"><!-- Input user email -->
+                            <i class="ion-ios-checkmark"></i><!-- checkmark icon -->
+                            <i class="ion-android-alert"></i><!-- Alert icon -->
+                            <span></span>
+                        </div>
+                        <div class="form-group"><!-- Class of the form-Phone number -->
+                            <label for="">Phone Number : </label><!-- User phone number lable of the form -->
+                            <input type="text" placeholder="phonenumber" id = "phonenumber" autocomplete="off"><!-- Input user phone number -->
+                            <i class="ion-ios-checkmark"></i><!-- checkmark icon -->
+                            <i class="ion-android-alert"></i><!-- Alert icon -->
+                            <span></span>
+                        </div>
+                        <div class="form-group"><!-- Class of the form-Address -->
+                            <label for="">address : </label><!-- User Address lable of the form -->
+                            <input type="address" placeholder="address" id = "address" autocomplete="off"><!-- Input user Address -->
+                            <i class="ion-ios-checkmark"></i><!-- checkmark icon -->
+                            <i class="ion-android-alert"></i><!-- Alert icon -->
+                            <span></span>
+                        </div>
+            
+                        <button id = 'submit'>place order</button><!-- Button for place the orders -->
+                        <button  class="btn btn-primary btn-purchase" type="button" id='cart'>Clean Cart</button><!-- Button for clean the cart-->
+                        
+                    </form><!-- End of the java validation frorm -->
+                </div><!-- End of the Form Header -->
+
+        
+   
+        </section><!--End of the Section -->
+        
+<p><b><center>Developed BY : </b><a href="Abishaya.html" target="_blank"> Abishaya</a></p></center><!-- Link to the Editor's page -->
+
+        
+    </body><!--end of the body -->
+</html><!-- End of the HTML-->

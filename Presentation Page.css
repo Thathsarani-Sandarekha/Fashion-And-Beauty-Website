@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+ body {
+   min-height: 100vh;
+   width: 100%;
+   background: #312e2d;
+ }
+
+ h1 {
+   text-align: center;
+   font-family: 'Bellota', cursive;
+   font-size: 30px;
+   color: #ffa8b5;
+}
+
+h2 {
+   text-align: center;
+   font-family: 'Bellota', cursive;
+   font-size: 25px;
+   color: #b69196;
+}
+
+#displaytime{
+   text-align: center;
+   font-size: 25px;
+   color: #b69196;
+   align-items: center;
+}
+
+.timeImage {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 10%;
+}
+
+ .container
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.container .card
+{
+   width: 299.5px;
+   height: 416px;
+   padding: 60px 30px;
+   margin: 20px;
+   background: #312e2d;
+   box-shadow: 9px 9px 18px #875d7f,
+               -8px -8px 16px #926c72;
+               border-radius: 20px;
+}
+
+.container .card .content
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.container .card .content .imgBox
+{
+   width: 180px;
+   height: 180px;
+   border-radius: 50%;
+   position: relative;
+   margin-bottom: 20px;
+   overflow: hidden;
+}
+
+.container .card .content .imgBox img
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.container .card .content .name h4
+{
+   color: #ffa8b5;
+   font-size: 25px;
+   font-weight: bold;
+   text-align: center;
+   letter-spacing: 1px;
+}
+
+.container .card .content .name h5
+{
+   color: #9d4c91;
+   font-size: 20px;
+   font-weight: bold;
+   text-align: center;
+}
+
+.container .card .content .social
+{
+   margin-top: 0.5px;
+}
+
+.container .card .content .social a
+{
+   text-decoration: none;
+   color: #8f6c84;
+   font-size: 30px;
+   margin: 10px;
+   transition: color 0.4s;
+}
+
+.container .card .content .social a:hover
+{
+   color: #ffa8b5;
+}
+
+
+  /*------------------- footer ----------------------*/
+
+
+footer {
+   background: #5e5a5b;
+   display: block;
+   position: absolute;
+   width: 100%;;
+   left:0;
+   /* bottom: 0%; */
+   top: 300%;
+   text-align: center;
+   margin-left: auto;
+  margin-right:auto;
+  margin-top:150px;
+   opacity: 0.5;
+ }
+
+ footer:hover{
+   opacity: 0.9;
+}
+ 
+footer p {
+   text-align: center;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 16px;
+   color: #b86fb7;
+   padding-top: 20px;
+}
+ 
+.social
+{ 
+   display:table; 
+   margin:15px auto 0 auto; 
+   list-style-type:none; 
+}
+
+.social li 
+{ 
+   padding-left:20px; 
+   padding-top:10px; 
+   float:left; 
+}
+
+.social li a { 
+   text-decoration: none;
+  color: #8f6c84;
+  font-size: 30px;
+  margin: 10px;
+  transition: color 0.4s;
+}
+
+.social li a:hover {
+   color: #ffa8b5;
+}
+.social li i 
+{  
+   width:20px; 
+   height:20px; 
+   text-align:center;
+}

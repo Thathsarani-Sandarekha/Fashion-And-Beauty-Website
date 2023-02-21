@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+   <link rel="stylesheet" href="Presentation Page.css">
+   <title>Presentation Page</title>
+
+</head>
+<body>
+    <h1>Fashion and Beauty System - Beauty.com</h1>
+    <h2>Creators</h2>
+    <br>
+    <div class="time">
+        <div id="displaytime"></div>
+        <img class="timeImage" src="timeAnim.gif">
+    </div>
+      <div class="container">
+        <div class="card">
+            <div class="content">
+                <div class="imgBox">
+                    <img src="Student 1.jpg" id="st1" alt="Student 1">
+                </div>
+                <div class="name">
+                    <h4>Thathsarani</h4>
+                    <h5>Student 1</h5>
+                </div>
+                <div class="social">
+                    <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="content">
+                <div class="imgBox">
+                    <img src="Student 2.jpeg" id="st2" alt="Student 2">
+                </div>
+                <div class="name">
+                    <h4>Rimsan</h4>
+                    <h5>Student 2</h5>
+                </div>
+                <div class="social">
+                    <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="content">
+                <div class="imgBox">
+                    <img src="Student 3.jpeg" id="st3" alt="Student 3">
+                </div>
+                <div class="name">
+                    <h4>Abishaya</h4>
+                    <h5>Student 3</h5>
+                </div>
+                <div class="social">
+                    <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="content">
+                <div class="imgBox">
+                    <img src="Student 4.jpeg" id="st4" alt="Student 4">
+                </div>
+                <div class="name">
+                    <h4>Janani</h4>
+                    <h5>Student 4</h5>
+                </div>
+                <div class="social">
+                    <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var seconds = 0;
+        function timeCounting() {
+            seconds += 1;
+            document.getElementById("displaytime").innerText="This Page Will Be Redirect In " + seconds + " Seconds ...";
+        }
+        setInterval(timeCounting, 1000);
+        function redirectToMain() {
+            window.location = "Gallerynew.html";
+        }
+        setTimeout('redirectToMain()', 4000);
+    </script>
+
+    <!-----footer----->
+
+		<footer >
+            <!-----link to editors page----->   
+            <p class="text-center">Designed by |<a href="Creators Page S1.html"> Thathsarani Sandarekha</a></p>
+
+            <ul class="social">
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+            </ul>
+            <div><p>© 2022 Beauty Pvt. Ltd.</p></div>
+        </footer>
+
+</body>
+</html>

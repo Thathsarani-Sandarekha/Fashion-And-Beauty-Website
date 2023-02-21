@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<Reviews>
+   <Review id="101">
+      <Name>Larry King</Name>
+      <Product>Red Lipstick</Product>
+      <Rating>9/10</Rating>
+      <publish_date>2022-01-29</publish_date>
+      <reviewDescription>Highly satisfied with the service and the product.</reviewDescription>
+   </Review >
+   <Review id="102">
+      <Name>Molly Peters</Name>
+      <Product>OLAY Regenerist</Product>
+      <Rating>7/10</Rating>
+      <publish_date>2022-03-15</publish_date>
+      <reviewDescription>There were delivery delay. Apart from that good.</reviewDescription>
+   </Review >
+   <Review  id="103">
+      <Name>Liam Payne</Name>
+      <Product>Ayush Facecream</Product>
+      <Rating>7/10</Rating>
+      <publish_date>2021-11-17</publish_date>
+      <reviewDescription>The products were high quality but the delivery charges are too high.</reviewDescription>
+   </Review >
+   <Review  id="104">
+      <Name>Jake Peralta</Name>
+      <Product>Makeup set</Product>
+      <Rating>10/10</Rating>
+      <publish_date>2022-03-10</publish_date>
+      <reviewDescription>Highly satisfied with the product. Great variety of products and not so expensive prices.</reviewDescription>
+   </Review >
+   <Review  id="105">
+      <Name>John Reeves</Name>
+      <Product>Blue Lipstick</Product>
+      <Rating>9/10</Rating>
+      <publish_date>2022-06-14</publish_date>
+      <reviewDescription>The website was really easy to navigate and the product range is good.</reviewDescription>
+   </Review >
+   <Review  id="106">
+      <Name>Stefan Haynes</Name>
+      <Product>LBR Chestnut Lipstick</Product>
+      <Rating>8/10</Rating>
+      <publish_date>2021-12-30</publish_date>
+      <reviewDescription>satisfied of the product and the service.</reviewDescription>
+   </Review >
+   <Review  id="107">
+      <Name>Dave Moores</Name>
+      <Product>Matte Foundation</Product>
+      <Rating>9/10</Rating>
+      <publish_date>2022-04-30</publish_date>
+      <reviewDescription>The foundation was really good and of high quality</reviewDescription>
+   </Review >
+   <Review  id="108">
+      <Name>Harry Wades</Name>
+      <Product>L'oreal SHampoo</Product>
+      <Rating>9/10</Rating>
+      <publish_date>2022-05-29</publish_date>
+      <reviewDescription>High quality products at easy prices. Good service.</reviewDescription>
+   </Review >
+   <Review  id="109">
+      <Name>Melissa Cooper</Name>
+      <Product>Enchante Powder</Product>
+      <Rating>5/10</Rating>
+      <publish_date>2022-02-11</publish_date>
+      <reviewDescription>The product was damaged during delivery.Hoping for a refund or a new product</reviewDescription>
+   </Review >
+   <Review  id="110">
+      <Name>Terry Wayne</Name>
+      <Product>Olay Cream</Product>
+      <Rating>8/10</Rating>
+      <publish_date>2021-12-26</publish_date>
+      <reviewDescription>High quality products . Satisfied with the service</reviewDescription>
+   </Review >
+</Reviews>

@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    justify-content: center;
+    background: #312e2d;
+    display: flex;
+}
+
+.container {
+
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0,0,0, 1);
+}
+
+.container .maintitle{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.container .maintitle::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+    background-color: #ffa8b5;
+}
+
+.container form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 1500px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.container form .form {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.3s ease;
+}
+
+.container form .title {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+}
+
+.container form .fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .fields .input_box{
+    display: flex;
+    width: calc(100%/3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.input_box span {
+    font-size: 12px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.dropdown .dropdown-select span {
+    font-size: 12px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.dropdown .dropdown-select select { 
+    width: 265px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+
+.userPreferences .fields .dropdown .dropdown-select div {
+    display: flex;
+    width: calc(100%/3);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.input_box input {
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(214, 196, 196);
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+    background: transparent;
+
+}
+
+.dropdown .dropdown-select select {
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(228, 218, 218);
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+    background: transparent;
+}
+
+.input_box input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+
+.input_box input[type="date"] {
+    color: #b4abab;
+}
+
+.input_box input[type="date"]:valid {
+    color: #d2bfbf;
+}
+
+form .gender_button {
+    width: 265px;
+}
+
+form .gender_button span{
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+
+form .gender_button label {
+    font-size: 14px;
+    color: #fff;
+}
+
+form .login .fields .a {
+    font-size: 15px;
+    color: #fff;
+}
+
+.container form .mandotary .Button input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 840px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px 0; 
+    background-color: #ffa8b5;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color:#ffa8b5;
+}
+
+form .mandotary {
+    padding-top: 20px;
+}
+
+form .mandotary span {
+    font-size: 15px;
+    color: #fff;
+}
+
+
+:root{
+    --background: rgba(14, 16, 16, 0.85); /*Using a variable will make it convienient to change nav color later*/
+}
+  
+*, *::before, *::after{
+   box-sizing: border-box;
+}
+
+/* Navigation Styles */
+header{
+    background: var(--background);
+    text-align: center;
+    position: fixed;
+    z-index:999; /*To keep the nav all the way top*/
+    width: 100%;
+   }
+   .nav-toggle{
+    display: none;
+   }
+   .nav-toggle-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+   }
+   .nav-toggle-label span,
+   .nav-toggle-label span::before,
+   .nav-toggle-label span::after{
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+   }
+   .nav-toggle-label span::before,
+   .nav-toggle-label span::after{
+    content: '';
+    position: absolute;
+   }
+   .nav-toggle-label span::before{
+       content: '';
+       bottom: 7px;
+   }
+   .nav-toggle-label span::after{top: 7px;
+   }
+   .nav{
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--background);
+    width: 100%;
+    transform:scale(1,0);
+       transform-origin: top;
+       transition: transform 200ms ease-in-out;
+   }
+   
+   nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+   }
+   nav li{
+    margin-bottom: 1em;
+    margin-left: 1em;
+    
+   }
+   nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+       opacity: 0;
+       transition: opacity 250ms ease-in-out;
+   }
+   nav a:hover{
+    color: #000;
+   }
+   .nav-toggle::checked ~ nav { /*Looks for nav sibbling to .nav-toggle*/
+       transform: scale(1,1);
+   }
+   .nav-toggle:checked ~ nav a{
+       opacity: 1;
+       transition: opacity 150ms ease-in-out 150ms;
+   }
+   @media screen and (min-width: 800px){
+       .nav-toggle-label{
+           display: none;
+       }
+       header{
+           display: grid;
+           grid-template-columns: 1fr auto minmax(600px, 3fr) ;
+       }
+       .logo{
+           grid-column: 2 span 3;
+       }
+       nav{
+        all: onset;  /*Removes previous styles done on nav - cus hamburger menu popping up */
+           grid-column: 3/4;
+           display: flex;
+                   justify-content:flex-end;
+           align-items: center;
+   
+           
+       }
+       nav ul{
+           display: flex;
+   /* 		justify-content:flex-end; */
+           
+       }
+       nav li{
+           margin-left: 3em;
+           margin-bottom: 0;
+       }
+       nav a{
+           opacity: 1;
+       }
+   }
+ 
+
+    /*------------------- footer ----------------------*/
+
+
+footer {
+    background: #5e5a5b;
+    display: block;
+    position: absolute;
+    width: 100%;;
+    left:0;
+    /* bottom: 0%; */
+    top: 300%;
+    text-align: center;
+    margin-left: auto;
+   margin-right:auto;
+   margin-top:150px;
+    opacity: 0.5;
+  }
+ 
+  footer:hover{
+    opacity: 0.9;
+ }
+  
+ footer p {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #b86fb7;
+    padding-top: 20px;
+ }
+  
+ .social
+ { 
+    display:table; 
+    margin:15px auto 0 auto; 
+    list-style-type:none; 
+ }
+ 
+ .social li 
+ { 
+    padding-left:20px; 
+    padding-top:10px; 
+    float:left; 
+ }
+ 
+ .social li a { 
+    text-decoration: none;
+   color: #8f6c84;
+   font-size: 30px;
+   margin: 10px;
+   transition: color 0.4s;
+ }
+ 
+ .social li a:hover {
+    color: #ffa8b5;
+ }
+ .social li i 
+ {  
+    width:20px; 
+    height:20px; 
+    text-align:center;
+ }
+ 
